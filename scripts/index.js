@@ -15,8 +15,8 @@ var createScene = function () {
     var light2 = new BABYLON.PointLight("light2", new BABYLON.Vector3(0, 1, -1), scene);
 
     // Add and manipulate meshes in the scene
-    var mesh = BABYLON.SceneLoader.ImportMesh("", "meshes/", "test.obj", scene);
-
+    var mesh = BABYLON.SceneLoader.ImportMesh("", "https://raw.githubusercontent.com/A0405u/VirtualWorld/master/meshes/", "test.obj", scene);
+    var player = BABYLON.MeshBuilder.CreateSphere("player", {diameter: 4, diameterY: 6}, scene);
     return scene;
 };
 
